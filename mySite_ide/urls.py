@@ -20,4 +20,9 @@ urlpatterns = [
     path('rsavenkov/', include('rsavenkov.urls')),
     path('polls/', include('polls.urls')),
     path('admin/', admin.site.urls),
+    path('polls/', include('mshirinskiy.urls')),
+    path('pixy/', include('mshirinskiy.urls')),
+    path('talisman/', include('mshirinskiy.urls')),
+    path('blaze/', include('mshirinskiy.urls')),
+    path('dision/', include('mshirinskiy.urls')),
 ]
