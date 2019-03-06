@@ -24,5 +24,5 @@ urlpatterns = [
     path('rsavenkov/', include('rsavenkov.urls')),
     path('polls/', include('polls.urls')),
     path('admin/', admin.site.urls),
-    url(r'^vinog/', include('qwe1.mySite_ide.urls')),
+    url(r'^vinog/', include('pvinogradov.urls')),
 ]
