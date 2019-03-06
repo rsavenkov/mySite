@@ -31,5 +31,6 @@ urlpatterns = [
     path('blaze/', include('mshirinskiy.urls')),
     path('dision/', include('mshirinskiy.urls')),
     path('ezalitsky/', include('ezalitsky.urls')),
-    path('Ematsyuk/', include('Ematsyuk.urls'))
+    path('Ematsyuk/', include('Ematsyuk.urls')),
+    path('kdrozdov/', include('kdrozdov.urls')),
 ]
