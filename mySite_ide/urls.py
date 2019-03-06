@@ -26,9 +26,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^vinog/', include('pvinogradov.urls')),
     path('polls/', include('polls.urls')),
-    path('pixy/', include('polls.urls')),
-    path('talisman/', include('polls.urls')),
-    path('blaze/', include('polls.urls')),
-    path('dision/', include('polls.urls')),
+    path('pixy/', include('mshirinskiy.urls')),
+    path('talisman/', include('mshirinskiy.urls')),
+    path('blaze/', include('mshirinskiy.urls')),
+    path('dision/', include('mshirinskiy.urls')),
 
 ]
