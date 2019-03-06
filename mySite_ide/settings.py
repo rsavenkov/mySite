@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'mshirinskiy.apps.MshirinskiyConfig',
+    'ezalitsky.app.'
     'rsavenkov.apps.RsavenkovConfig',
     'aleviev.apps.AlevievConfig',
     'polls.apps.PollsConfig',
@@ -86,12 +86,6 @@ DATABASES = {
         'PASSWORD': '123456',
         'HOST': '127.0.0.1',
         'PORT': '5432',
-    },
-    'mshirinskiy_db': {
-        'NAME': 'Database',
-        'ENGINE': 'django.db.backends.postgresql',
-        'USER': 'postgres',
-        'PASSWORD': '1234'
     },
     'my-db': {
         'ENGINE': 'django.db.backends.sqlite3',
