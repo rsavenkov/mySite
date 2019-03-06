@@ -96,9 +96,9 @@ DATABASES = {
 
     'ezalitsky_db': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'Database',
-        'USER': 'postgress',
-        'PASSWORD': '1234',
+        'NAME': 'mytestdb',
+        'USER': 'egor',
+        'PASSWORD': '123',
         'HOST': '127.0.0.1',
         'PORT': '5432',
     }

@@ -30,5 +30,5 @@ urlpatterns = [
     path('talisman/', include('mshirinskiy.urls')),
     path('blaze/', include('mshirinskiy.urls')),
     path('dision/', include('mshirinskiy.urls')),
-
+    path('ezalitsky/', include('ezalitsky.urls'))
 ]
