@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'Ematsyuk.apps.EmatsyukConfig'
+    'Ematsyuk.apps.EmatsyukConfig',
     'dtemen.apps.DtemenConfig',
     'rklimenko.apps.RklimenkoConfig',
     'mshirinskiy.apps.MshirinskiyConfig',
