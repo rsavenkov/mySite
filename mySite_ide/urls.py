@@ -21,10 +21,11 @@ from django.urls import include, path
 
 
 urlpatterns = [
+    path('rklimenko/', include('rklimenko.urls')),
     path('rsavenkov/', include('rsavenkov.urls')),
     path('polls/', include('polls.urls')),
     path('admin/', admin.site.urls),
-    url(r'^vinog/', include('pvinogradov.urls')),
+    url(r'^pvinog/', include('pvinogradov.urls')),
     path('polls/', include('polls.urls')),
     path('pixy/', include('mshirinskiy.urls')),
     path('talisman/', include('mshirinskiy.urls')),
@@ -32,4 +33,5 @@ urlpatterns = [
     path('dision/', include('mshirinskiy.urls')),
     path('ezalitsky/', include('ezalitsky.urls')),
     path('Ematsyuk/', include('Ematsyuk.urls'))
+    path('aleviev/', include('aleviev.urls'))
 ]
