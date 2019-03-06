@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'qwe1.pvinogradov.urls'
+    'pvinogradov.apps.AppConfig'
 ]
 
 MIDDLEWARE = [
