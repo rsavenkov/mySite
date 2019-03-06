@@ -31,10 +31,11 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'rklimenko.apps.RklimenkoConfig'
+    'rklimenko.apps.RklimenkoConfig',
     'mshirinskiy.apps.MshirinskiyConfig',
     'rsavenkov.apps.RsavenkovConfig',
     'aleviev.apps.AlevievConfig',
+    'ezalitsky.apps.EzalitskyConfig',
     'polls.apps.PollsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -84,13 +85,22 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+    },
 
     'mshirinskiy': {
         'NAME': 'Database',
         'ENGINE': 'django.db.backends.postgresql',
         'USER': 'postgres',
         'PASSWORD': '1234',
+    },
+
+    'ezalitsky_db': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'Database',
+        'USER': 'postgress',
+        'PASSWORD': '1234',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
     }
 
 }
