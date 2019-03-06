@@ -31,10 +31,9 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'rklimenko.apps.RklimenkoConfig'
-    'mshirinskiy.apps.MshirinskiyConfig',
+
+    'rklimenko.apps.RklimenkoConfig',
     'rsavenkov.apps.RsavenkovConfig',
-    'aleviev.apps.AlevievConfig',
     'polls.apps.PollsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -42,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'pvinogradov.apps.PageConfig'
+    'ezalitsky.apps.EzalitskyConfig',
 ]
 
 MIDDLEWARE = [
@@ -81,11 +80,23 @@ WSGI_APPLICATION = 'mySite_ide.wsgi.application'
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    'rklimenko_db': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        'PASSWORD': '352287',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
+    },
+    'ezalitsky_db': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'Database',
+        'USER': 'postgress',
+        'PASSWORD': '1234',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
+        }
     }
-}
 
 
 
