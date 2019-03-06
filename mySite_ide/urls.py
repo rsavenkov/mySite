@@ -16,11 +16,10 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from django.urls import include, path
-from django.contrib import admin
-from django.urls import include, path
 
 
 urlpatterns = [
+    path('dtemen/', include('dtemen.urls')),
     path('rklimenko/', include('rklimenko.urls')),
     path('rsavenkov/', include('rsavenkov.urls')),
     path('polls/', include('polls.urls')),
