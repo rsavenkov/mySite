@@ -5,5 +5,5 @@ from . import views
 urlpatterns = [
     path('planet', views.planet, name='planet'),
     path('country', views.country, name='country'),
-    path('city', views.planet, name='city'),
+    path('city', views.city, name='city'),
 ]

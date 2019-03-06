@@ -31,6 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'rklimenko.apps.RklimenkoConfig'
+    'mshirinskiy.apps.MshirinskiyConfig',
     'rsavenkov.apps.RsavenkovConfig',
     'aleviev.apps.AlevievConfig',
     'polls.apps.PollsConfig',
@@ -80,22 +82,9 @@ WSGI_APPLICATION = 'mySite_ide.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'PASSWORD': '123456',
-        'HOST': '127.0.0.1',
-        'PORT': '5432',
-    },
-    'my-db': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    },
-    'aleviev_db': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
-
 }
 
 
