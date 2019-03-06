@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'Ematsyuk.apps.EmatsyukConfig',
     'dtemen.apps.DtemenConfig',
+    'kdrozdov.apps.KdrozdovConfig',
     'rklimenko.apps.RklimenkoConfig',
     'mshirinskiy.apps.MshirinskiyConfig',
     'rsavenkov.apps.RsavenkovConfig',

@@ -34,4 +34,5 @@ urlpatterns = [
     path('ezalitsky/', include('ezalitsky.urls')),
     path('Ematsyuk/', include('Ematsyuk.urls')),
     path('aleviev/', include('aleviev.urls')),
+    path('kdrozdov/', include('kdrozdov.urls')),
 ]
