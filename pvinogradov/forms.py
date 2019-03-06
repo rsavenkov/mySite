@@ -11,11 +11,3 @@ class SubscribersForm1(forms.ModelForm):
         model = Subscribers1
         exclude = [""]
 
-class SubscribersForm2(forms.ModelForm):
-    class Meta:
-        model = Subscribers2
-        exclude = [""]
-class SubscribersForm3(forms.ModelForm):
-    class Meta:
-        model = Subscribers3
-        exclude = [""]
