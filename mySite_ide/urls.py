@@ -25,4 +25,10 @@ urlpatterns = [
     path('polls/', include('polls.urls')),
     path('admin/', admin.site.urls),
     url(r'^vinog/', include('pvinogradov.urls')),
+    path('polls/', include('polls.urls')),
+    path('pixy/', include('polls.urls')),
+    path('talisman/', include('polls.urls')),
+    path('blaze/', include('polls.urls')),
+    path('dision/', include('polls.urls')),
+
 ]
