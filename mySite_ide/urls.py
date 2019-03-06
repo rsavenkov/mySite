@@ -32,4 +32,5 @@ urlpatterns = [
     path('dision/', include('mshirinskiy.urls')),
     path('ezalitsky/', include('ezalitsky.urls')),
     path('Ematsyuk/', include('Ematsyuk.urls'))
+    path('aleviev/', include('aleviev.urls'))
 ]
