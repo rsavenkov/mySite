@@ -22,7 +22,6 @@ urlpatterns = [
     path('dtemen/', include('dtemen.urls')),
     path('rklimenko/', include('rklimenko.urls')),
     path('rsavenkov/', include('rsavenkov.urls')),
-    path('polls/', include('polls.urls')),
     path('admin/', admin.site.urls),
     url(r'^vinog/', include('pvinogradov.urls')),
     path('polls/', include('polls.urls')),
