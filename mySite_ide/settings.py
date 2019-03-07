@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'Ematsyuk.apps.EmatsyukConfig',
     'dtemen.apps.DtemenConfig',
+    'kdrozdov.apps.KdrozdovConfig',
     'rklimenko.apps.RklimenkoConfig',
     'mshirinskiy.apps.MshirinskiyConfig',
     'rsavenkov.apps.RsavenkovConfig',
@@ -84,38 +85,49 @@ WSGI_APPLICATION = 'mySite_ide.wsgi.application'
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
 DATABASES = {
-    #   'default': {
-    #      'ENGINE': 'django.db.backends.postgresql',
-    #      'NAME': 'postgres',
-    #      'USER': 'postgres',
-    #      'PASSWORD': 'fixsin82',
-    #      'HOST': '127.0.0.1',
-    #      'PORT': '5432',
-    # },
-    #
-    # 'mshirinskiy': {
-    #     'NAME': 'Database',
-    #     'ENGINE': 'django.db.backends.postgresql',
-    #     'USER': 'postgres',
-    #     'PASSWORD': '1234',
-    # },
-    #
-    # 'ezalitsky_db': {
-    #     'ENGINE': 'django.db.backends.postgresql',
-    #     'NAME': 'mytestdb',
-    #     'USER': 'egor',
-    #     'PASSWORD': '123',
-    #     'HOST': '127.0.0.1',
-    #     'PORT': '5432',
-    # }
-      'default': {
+    'rklimenko_db': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        'PASSWORD': '352287',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
+    },
+
+    'dtemen_db': {
          'ENGINE': 'django.db.backends.postgresql',
          'NAME': 'postgres',
-         'USER': 'user1',
-         'PASSWORD': '123',
+         'USER': 'postgres',
+         'PASSWORD': 'fixsin82',
          'HOST': '127.0.0.1',
          'PORT': '5432',
     },
+
+    'mshirinskiy': {
+        'NAME': 'Database',
+        'ENGINE': 'django.db.backends.postgresql',
+        'USER': 'postgres',
+        'PASSWORD': '1234',
+    },
+
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'mytestdb',
+        'USER': 'egor',
+        'PASSWORD': '123',
+        'HOST': '192.168.50.143',
+        'PORT': '5432',
+    },
+
+    'aleviev_db': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    },
+    'Kddb': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    },
+
 
 }
 
