@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'afrolov.apps.AfrolovConfig',
     'Ematsyuk.apps.EmatsyukConfig',
     'dtemen.apps.DtemenConfig',
     'kdrozdov.apps.KdrozdovConfig',
@@ -90,6 +91,14 @@ DATABASES = {
         'NAME': 'postgres',
         'USER': 'postgres',
         'PASSWORD': '352287',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
+    },
+    'afrolov_db': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        'PASSWORD': 'qwerty',
         'HOST': '127.0.0.1',
         'PORT': '5432',
     },
