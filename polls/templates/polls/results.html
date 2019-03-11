@@ -1,0 +1,26 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="card">
+    <h5 class="card-header">{{ question.question_text }}</h5>
+    <div class="card-body">
+
+        {% for choice in question.choice_set.all %}
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">{{ choice.choice_text }}</span>
+                    <span class="input-group-text">{{ choice.votes }}</span>
+                </div>
+            </div>
+        {% endfor %}
+
+        <a href="{% url 'polls:detail' question.id %}" class="btn btn-primary">Проголосовать снова</a>
+    </div>
+</div>
+
+</body>
+</html>
