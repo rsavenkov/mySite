@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'aklimenko.apps.AklimenkoConfig',
     'afrolov.apps.AfrolovConfig',
     'Ematsyuk.apps.EmatsyukConfig',
     'dtemen.apps.DtemenConfig',
@@ -86,6 +87,14 @@ WSGI_APPLICATION = 'mySite_ide.wsgi.application'
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
 DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        'PASSWORD': '352287',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
+    },
     'rklimenko_db': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'postgres',
@@ -119,7 +128,7 @@ DATABASES = {
         'PASSWORD': '1234',
     },
 
-    'default': {
+    'd': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'mytestdb',
         'USER': 'egor',
