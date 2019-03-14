@@ -87,7 +87,7 @@ WSGI_APPLICATION = 'mySite_ide.wsgi.application'
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
 DATABASES = {
-    #не трогать ds по умолчанию
+    #не трогать db по умолчанию
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'postgres',
