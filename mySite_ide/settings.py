@@ -87,6 +87,16 @@ WSGI_APPLICATION = 'mySite_ide.wsgi.application'
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
 DATABASES = {
+    #не трогать ds по умолчанию
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        'PASSWORD': '123456',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
+    },
+
     'aklimenko_db': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'postgres',
