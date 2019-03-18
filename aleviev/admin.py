@@ -1,3 +1,7 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import Street
+from .models import House
+
+admin.site.register(Street)
+admin.site.register(House)
