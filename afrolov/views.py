@@ -14,7 +14,7 @@ def example2(request):
 
 def index(request):
     latest_question_list = Question_afrolov.objects.order_by('-pub_date')[:5]
-    template = loader.get_template('mshirinskiy/index.html')
+    template = loader.get_template('afrolov/index.html')
     context = {
         'latest_question_list': latest_question_list,
     }
