@@ -1,10 +1,5 @@
-<html>
-<head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-</head>
-<body>
-
+{% extends "polls/base.html" %}
+{% block body_block %}
 <div class="card">
     <h5 class="card-header">{{ question.question_text }}</h5>
     <div class="card-body">
@@ -21,6 +16,4 @@
         <a href="{% url 'polls:detail' question.id %}" class="btn btn-primary">Проголосовать снова</a>
     </div>
 </div>
-
-</body>
-</html>
+{% endblock %}
