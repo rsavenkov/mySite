@@ -7,6 +7,7 @@ from dtemen.models import *
 
 admin.site.register(Question_Mikle)
 admin.site.register(Choice_Mikle)
+admin.site.register(Act_Mikle)
 admin.site.register(dtemenstudent)
 admin.site.register(dtemenperson)
 
